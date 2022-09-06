@@ -1,14 +1,4 @@
-/*### Primary
 
-Very Dark Magenta: hsl(300, 43%, 22%)
-Soft Pink: hsl(333, 80%, 67%)
-
-### Neutral
-
-Dark Grayish Magenta: hsl(303, 10%, 53%)
-Light Grayish Magenta: hsl(300, 24%, 96%)
-White: hsl(0, 0%, 100%)
-*/
 
 * {
     margin: 0;
@@ -42,12 +32,13 @@ body {
 
 .intro {
     width: 90%;
-    margin-left: 19px;
+    margin-left: 20px;
 }
 
 header {
     text-align: center;
     width: 90%;
+    margin: 0 30px 0 10px;
 
 }
 
@@ -110,7 +101,7 @@ picture > img {
     align-items: center;
     justify-content: space-between;
     align-content: center;
-    margin: 30px 0 0 0;
+    margin-top: 40px;
 
 }
 
@@ -161,7 +152,16 @@ span {
 /* DESKTOP VIEW */
 
 @media (min-width: 640px) {
+
+    body {
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+    }
     
+
+    
+
     .container {
         width: 1200px;
         height: 600px;
@@ -173,6 +173,7 @@ span {
         flex-direction: row;
         height: 300px;
         width: 1200px;
+        margin-left: 50px;
     }
 
     header {
@@ -208,8 +209,8 @@ span {
     }
 
     .rating {
-        width: 400px;
-        height: 60px;
+        width: 410px;
+        height: 53px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -220,6 +221,7 @@ span {
 
     .rating > p {
         padding: 0 0 8px 28px;
+        font-size: .95rem;
     }
 
     .rating:first-of-type {
@@ -244,9 +246,9 @@ span {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        align-content: stretch;
+        align-content: center;
         margin-top: -30px;
-        padding-right: 75px;
+        padding-right: 30px;
     }
 
     .buyer {
@@ -267,6 +269,7 @@ span {
 
     .buyer:nth-of-type(2) {
         margin-top: 45px;
+        padding-right: 15px;
     }
 
     .buyer:nth-of-type(3) {
