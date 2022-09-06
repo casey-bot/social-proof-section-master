@@ -1,0 +1,282 @@
+/*### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+    margin: auto;
+}
+
+.container {
+    width: 375px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 80px 0;
+}
+
+.intro {
+    width: 90%;
+    margin-left: 19px;
+}
+
+header {
+    text-align: center;
+    width: 90%;
+
+}
+
+header > h1 {
+    color: hsl(300, 43%, 22%);
+    padding: 0 50px 20px 50px;
+}
+
+header > p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    padding: 0 12px 15px 12px;
+    line-height: 1.2;
+}
+
+/* STARRED RATINGS */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    width: 95%;
+    margin-top: 15px;
+}
+
+.rating {
+    background-color: hsl(300, 24%, 96%);
+    width: 90%;
+    text-align: center;
+    border-radius: 8px;
+    height: 70px;
+    line-height: 1.5;
+    padding-top: 15px;
+}
+
+.rating:nth-of-type(2) {
+    margin: 15px 0 15px 0;
+}
+
+picture > img {
+    width: 18px;
+    padding: 0 3px 3px 0
+}
+
+.rating > p {
+    display: block;
+    font-weight: 700;
+    color:hsl(300, 43%, 22%);
+}
+
+
+/* USER REVIEWS */
+
+.reviews {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    margin: 30px 0 0 0;
+
+}
+
+.buyer {
+    background-color:hsl(300, 43%, 22%);
+    border-radius: 8px;
+    width: 90%;
+    height: 220px;
+    padding: 0 5px 10px 0;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    margin: 35px 20px 10px 30px;
+}
+
+.user > img {
+    border-radius: 50%;
+    width: 35px;
+}
+
+.user > h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    line-height: 1.2;
+    padding-left: 20px;
+    
+}
+
+span {
+    display: block;
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.buyer > p {
+    color: hsl(0, 0%, 100%);
+    line-height: 1.4;
+    text-align: left;
+    padding: 10px 20px 30px 30px;
+}
+
+.buyer:nth-of-type(2) {
+    margin: 15px 0 15px 0;
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width: 640px) {
+    
+    .container {
+        width: 1200px;
+        height: 600px;
+        margin: auto;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        width: 1200px;
+    }
+
+    header {
+        width: 600px;
+        text-align: left;
+        padding-right: 40px;
+    }
+
+    header > h1 {
+        font-size: 3.3rem;
+        font-weight: bolder;
+    }
+
+    header > p {
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 1.4;
+        padding: 0 55px 0 49px;
+    }
+
+    /* STARRED REVIEWS */
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        align-content: center;
+        width: 600px;
+        height: 300px;
+        margin-top: -30px;
+
+    }
+
+    .rating {
+        width: 400px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+        padding-left: 30px;
+        padding-bottom: 5px;
+    }
+
+    .rating > p {
+        padding: 0 0 8px 28px;
+    }
+
+    .rating:first-of-type {
+        margin-right: 178px;
+    }
+
+    .rating:nth-of-type(2) {
+        margin: -90px 99px -90px 0;
+        
+    }
+
+    .rating:nth-of-type(3) {
+        margin-right: 20px;
+    }
+
+    /* USER REVIEWS */
+    
+    .reviews {
+        width: 1200px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: stretch;
+        margin-top: -30px;
+        padding-right: 75px;
+    }
+
+    .buyer {
+        width: 330px;
+        height: 230px;
+        letter-spacing: .2px;
+        padding-top: 10px;
+    }
+
+    .buyer > p {
+        padding-top: 17px;
+        letter-spacing: .2px;
+    }
+
+    .buyer:first-of-type {
+        margin: 0 0 0 30px;
+    }
+
+    .buyer:nth-of-type(2) {
+        margin-top: 45px;
+    }
+
+    .buyer:nth-of-type(3) {
+        margin-top: 50px;
+    }
+
+
+
+
+    
+    
+
+}
