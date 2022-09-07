@@ -1,5 +1,4 @@
 
-
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +38,6 @@ header {
     text-align: center;
     width: 90%;
     margin: 0 30px 0 10px;
-
 }
 
 header > h1 {
@@ -91,7 +89,6 @@ picture > img {
     color:hsl(300, 43%, 22%);
 }
 
-
 /* USER REVIEWS */
 
 .reviews {
@@ -102,7 +99,6 @@ picture > img {
     justify-content: space-between;
     align-content: center;
     margin-top: 40px;
-
 }
 
 .buyer {
@@ -129,7 +125,6 @@ picture > img {
     font-size: 15px;
     line-height: 1.2;
     padding-left: 20px;
-    
 }
 
 span {
@@ -159,9 +154,6 @@ span {
         background-position: top left, bottom right;
     }
     
-
-    
-
     .container {
         width: 1200px;
         height: 600px;
@@ -205,7 +197,6 @@ span {
         width: 600px;
         height: 300px;
         margin-top: -30px;
-
     }
 
     .rating {
@@ -229,8 +220,7 @@ span {
     }
 
     .rating:nth-of-type(2) {
-        margin: -90px 99px -90px 0;
-        
+        margin: -90px 99px -90px 0;   
     }
 
     .rating:nth-of-type(3) {
@@ -275,11 +265,4 @@ span {
     .buyer:nth-of-type(3) {
         margin-top: 50px;
     }
-
-
-
-
-    
-    
-
 }
