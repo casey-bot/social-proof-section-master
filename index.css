@@ -78,7 +78,7 @@ header > p {
     margin: 15px 0 15px 0;
 }
 
-.star > img {
+picture > img {
     width: 18px;
     padding: 0 3px 3px 0
 }
@@ -120,7 +120,7 @@ header > p {
     width: 35px;
 }
 
-.user > h1 {
+.user > h2 {
     color: hsl(0, 0%, 100%);
     font-size: 15px;
     line-height: 1.2;
